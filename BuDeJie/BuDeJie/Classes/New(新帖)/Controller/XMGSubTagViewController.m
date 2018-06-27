@@ -24,7 +24,7 @@ static NSString * const ID = @"a";
     [self.tableView registerNib:[UINib nibWithNibName:@"XMGSubTagCell" bundle:nil] forCellReuseIdentifier:ID];
     
     // 以后cell尽量使用注册方式去创建
-    
+    XMGLog(@"qwertyuidfghjkcvbnm");
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

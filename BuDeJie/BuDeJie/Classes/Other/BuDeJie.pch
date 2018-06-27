@@ -1,0 +1,44 @@
+//
+//  BuDeJie.pch
+//  BuDeJie
+//
+//  Created by 1 on 16/5/29.
+//  Copyright © 2016年 小码哥. All rights reserved.
+//
+
+/*
+    pch:必须要提前编译
+    pch工作原理: pch里面内容 被 所有文件共享
+    pch作用:存放一些公用头文件,宏,自定义LOG
+    pch注意点: 在OC中
+ */
+
+#ifdef __OBJC__ // OC文件
+
+#define XMGScreenH [UIScreen mainScreen].bounds.size.height
+#define XMGScreenW [UIScreen mainScreen].bounds.size.width
+
+#define iPhone6P (XMGScreenH == 736)
+#define iPhone6 (XMGScreenH == 667)
+#define iPhone5 (XMGScreenH == 568)
+#define iPhone4 (XMGScreenH == 480)
+
+#import "UIColor+Hex.h"
+#import "UIImage+Image.h"
+#import "UIView+Frame.h"
+#import "UIBarButtonItem+Item.h"
+
+#ifdef DEBUG  // 调试
+
+#define XMGLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define XMGLog(...) 
+
+#endif
+
+#endif
+
+
+

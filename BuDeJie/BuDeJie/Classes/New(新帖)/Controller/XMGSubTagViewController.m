@@ -25,6 +25,9 @@ static NSString * const ID = @"a";
     
     // 以后cell尽量使用注册方式去创建
     XMGLog(@"qwertyuidfghjkcvbnm");
+     XMGLog(@"qwertyuidfghjkcvbnm");
+     XMGLog(@"qwertyuidfghjkcvbnm");
+     XMGLog(@"qwertyuidfghjkcvbnm");
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
